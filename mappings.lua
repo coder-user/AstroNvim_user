@@ -11,7 +11,9 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
+        require("astronvim.utils.status").heirline.buffer_picker(
+          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+        )
       end,
       desc = "Pick to close",
     },
@@ -19,7 +21,25 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
+    ["W"] = { "5w", desc = "Select 5 words forward" },
+    ["B"] = { "5b", desc = "Select 5 words backward" },
+    ["L"] = { "5j", desc = "Select 5 lines down" },
+    ["H"] = { "5k", desc = "Select 5 lines up" },
+    ["-"] = { "N", desc = "Search backwards" },
+    ["="] = { "n", desc = "Search forwards" },
+    ["<"] = { "<<", desc = "Shift line left" },
+    [">"] = { ">>", desc = "Shift line right" },
+  },
+  v = {
+    ["W"] = { "5w", desc = "Select 5 words forward" },
+    ["B"] = { "5b", desc = "Select 5 words backward" },
+    ["L"] = { "5j", desc = "Select 5 lines down" },
+    ["H"] = { "5k", desc = "Select 5 lines up" },
+    ["Y"] = { '"+y', desc = "Copy selection to system clipboard" },
+  },
+  i = {
+    ["kj"] = { "<ESC>", desc = "Exit insert mode" },
   },
   t = {
     -- setting a mapping to false will disable it
