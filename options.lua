@@ -7,6 +7,8 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+    scrolloff = 3, -- Number of lines to keep above and below the cursor
+    timeoutlen = 300, -- Shorten key timeout length a little bit for which-key
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
