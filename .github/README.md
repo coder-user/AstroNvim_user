@@ -1,6 +1,7 @@
 # AstroNvim User Configuration Example
 
 winget install fzf
+scoop install make ripgrep fd gcc
 
 A user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
