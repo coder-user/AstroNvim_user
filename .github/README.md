@@ -1,5 +1,7 @@
 # AstroNvim User Configuration Example
 
+winget install fzf
+
 A user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
 ## 🛠️ Installation
