@@ -1,7 +1,12 @@
 # AstroNvim User Configuration Example
 
+```powershell
 winget install fzf
 scoop install make ripgrep fd gcc
+scoop install bottom
+winget install gdu
+scoop install lazygit
+```
 
 A user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
