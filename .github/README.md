@@ -9,12 +9,16 @@ A user configuration template for [AstroNvim](https://github.com/AstroNvim/Astro
 ```shell
 mv ~/.config/nvim ~/.config/nvim.bak
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
+Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak
+Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
 ```
 
 #### Clone AstroNvim
 
 ```shell
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim $env:LOCALAPPDATA\nvim
+nvim
 ```
 
 #### Create a new user repository from this template
@@ -27,7 +31,7 @@ You can also just clone this repository directly if you do not want to track you
 
 ```shell
 git clone https://github.com/coder-user/AstroNvim_user ~/.config/nvim/lua/user
-git clone https://github.com/coder-user/AstroNvim_user C:\Users\{用户名}\AppData\Local\nvim\lua\user
+git clone https://github.com/coder-user/AstroNvim_user $env:LOCALAPPDATA\nvim\lua\user
 ```
 
 #### Start Neovim
