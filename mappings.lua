@@ -26,10 +26,8 @@ return {
     ["B"] = { "5b", desc = "Select 5 words backward" },
     ["L"] = { "5j", desc = "Select 5 lines down" },
     ["H"] = { "5k", desc = "Select 5 lines up" },
-    ["-"] = { "N", desc = "Search backwards" },
-    ["="] = { "n", desc = "Search forwards" },
-    ["<"] = { "<<", desc = "Shift line left" },
-    [">"] = { ">>", desc = "Shift line right" },
+    -- ["<"] = { "<gv", desc = "Shift line left" },
+    -- [">"] = { ">gv", desc = "Shift line right" },
   },
   v = {
     ["W"] = { "5w", desc = "Select 5 words forward" },
@@ -37,9 +35,10 @@ return {
     ["L"] = { "5j", desc = "Select 5 lines down" },
     ["H"] = { "5k", desc = "Select 5 lines up" },
     ["Y"] = { '"+y', desc = "Copy selection to system clipboard" },
+    ["<"] = { "<gv", desc = "Shift line left" },
+    [">"] = { ">gv", desc = "Shift line right" },
   },
   i = {
-    ["kj"] = { "<ESC>", desc = "Exit insert mode" },
   },
   t = {
     -- setting a mapping to false will disable it

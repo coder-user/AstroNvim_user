@@ -1,6 +1,4 @@
-return {
-
-}
+return {}
 -- Add highlight groups in any theme
 -- return {
 --   BufferLineTabClose = { fg = "#1e222a", bg = "#1e222a" },

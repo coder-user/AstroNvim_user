@@ -11,26 +11,13 @@ return {
       headlines = true,
       mason = true,
       neotree = true,
-      noice = true,
       notify = true,
-      octo = true,
       sandwich = true,
       semantic_tokens = true,
       symbols_outline = true,
       telescope = true,
+      ts_rainbow2 = true,
       which_key = true,
     },
-    custom_highlights = function(colors)
-      return {
-        -- disable italics  for treesitter highlights
-        ["@parameter"] = { style = {} },
-        ["@type.builtin"] = { style = {} },
-        ["@namespace"] = { style = {} },
-        ["@text.uri"] = { style = { "underline" } },
-        ["@tag.attribute"] = { style = {} },
-        ["@tag.attribute.tsx"] = { style = {} },
-      }
-    end,
   },
 }
-
